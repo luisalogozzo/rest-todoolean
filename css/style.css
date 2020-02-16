@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: beige ;
+
+  font-family: 'Lato', sans-serif;
+}
+input {
+  background-color: beige ;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  width: 90%;
+  height: 40px;
+  border: 0;
+  border-bottom: .3px solid rgba(0.5, 0.5, 0.5, 0.5);
+  margin-top: 10px;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list-none {
+  list-style: none;
+}
+
+li::before {content: "•"; color: rgb(191, 113, 227);
+  display: inline-block; width: 1em;
+  margin-left: -1em}
+
+  #input-insert {
+    margin-bottom: 40px;
+  }
+
+  #btn-submit {
+    font-size: 30px;
+  }

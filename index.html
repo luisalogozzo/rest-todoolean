@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>TO DO LIST</title>
+  </head>
+  <body>
+    <div class="container">
+      <input id="input-insert" type="text" name="" placeholder="Aggiungi un nuovo elemento..." value="">
+      <span id="btn-submit"><i class="fas fa-plus-circle"></i></span>
+      <ul id="list" class="list-none">
+
+      </ul>
+    </div>
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <li class='list-item' data-id='{{id}}'>
+
+        <input type="text" name="" value="{{object}}">
+        <span id='btn-modify'><i class="fas fa-save"></i></span>
+        <span id='btn-delete'><i class="fas fa-trash-alt"></i></span>
+      </li>
+      </script>
+    <script src="js/script.js" charset="utf-8"></script>
+
+  </body>
+</html>
