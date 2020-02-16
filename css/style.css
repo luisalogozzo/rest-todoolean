@@ -37,6 +37,7 @@ li::before {content: "•"; color: #C06C86;
   margin-left: -1em}
 
   #input-insert {
+    color: #F2727F;
     margin-bottom: 40px;
   }
   #input-insert::-webkit-input-placeholder {

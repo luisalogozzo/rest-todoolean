@@ -8,15 +8,19 @@ PrintList(link);
 $(document).on('click', '#btn-submit', function () {
   $('#list').html(' ')
   var NewItem = $('#input-insert').val();
+  $('#input-insert').val('');
   addItem(link, NewItem);
 });
 
 
-$(document).on("keyup", ".list-item input", function() {
-  // if (event.which == 13 || event.keyCode == 13) {
-  //   modifyList(link, ListItemId, ThisItem);
-  // }
+$( "#input-insert").keyup(function() {
+ if (event.which == 13) {
+   var NewItem = $('#input-insert').val();
+   $('#input-insert').val('');
+   $('#list').html(' ')
+   addItem(link, NewItem);
 
+ }
 });
 
 $(document).on('click', '.btn-modify', function () {
