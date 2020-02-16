@@ -5,21 +5,24 @@
 }
 
 body {
-  background-color: beige ;
-
+  background: rgb(255,236,210);
+  background: linear-gradient(90deg, rgba(255,236,210,1) 0%, rgba(252,182,159,1) 35%);
   font-family: 'Lato', sans-serif;
 }
 input {
-  background-color: beige ;
+  background-color: inherit ;
   font-family: 'Dancing Script', cursive;
   font-size: 30px;
-  width: 90%;
+  width: 70%;
   height: 40px;
   border: 0;
   border-bottom: .3px solid rgba(0.5, 0.5, 0.5, 0.5);
   margin-top: 10px;
 }
 
+i {
+  color: #6E5B7E;
+}
 .container {
   text-align: center;
   margin: 0 auto;
@@ -29,14 +32,25 @@ input {
   list-style: none;
 }
 
-li::before {content: "•"; color: rgb(191, 113, 227);
+li::before {content: "•"; color: #C06C86;
   display: inline-block; width: 1em;
   margin-left: -1em}
 
   #input-insert {
     margin-bottom: 40px;
   }
+  #input-insert::-webkit-input-placeholder {
+    color: #F2727F;
+  }
+
+  .input-items {
+    color: #315D7F;
+  }
 
   #btn-submit {
     font-size: 30px;
+  }
+
+  .btn-modify {
+    margin-right: 10px;
   }

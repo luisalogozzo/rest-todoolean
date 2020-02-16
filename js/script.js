@@ -19,12 +19,12 @@ $(document).on("keyup", ".list-item input", function() {
 
 });
 
-$(document).on('click', '#btn-modify', function () {
+$(document).on('click', '.btn-modify', function () {
   var ThisItem = $(this).siblings().val();
   var ListItemId = $(this).parent().attr("data-id");
   modifyList(link, ListItemId, ThisItem);
 });
-$(document).on('click', '#btn-delete', function () {
+$(document).on('click', '.btn-delete', function () {
   var ListItemId = $(this).parent().attr("data-id");
   deleteItem(link, ListItemId);
 });
